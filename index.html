@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТСПК — Профориентация</title>
+  <meta name="description" content="Профориентация ТСПК. Пройди тест и узнай свою профессию в IT.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">ТСПК <span>Профориентация</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="professions.html">Профессии</a>
+        <a href="https://practicum.yandex.ru/promo/test" target="_blank" rel="noopener">Быстрый тест</a>
+        <a href="blog.html">Блог</a>
+        <a href="internships.html">Стажировки</a>
+      </nav>
+      <a class="btn header-cta" href="https://practicum.yandex.ru/promo/test" target="_blank" rel="noopener">Пройти тест</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ГЕРО -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__label hero__label--left"><b>IT</b> — это<br>не только код</div>
+        <div class="hero__label hero__label--right">ТВОЯ ПРОФЕССИЯ ???</div>
+
+        <img class="hero__badges" src="assets/img/hero-badges.png" alt="Карточки IT-специальностей">
+
+        <h1 class="hero__title">
+          <span class="hero__title-sub">ДАВАЙ УЗНАЕМ,</span>
+          <span class="hero__title-main">КТО ЖЕ <span class="mark">ТЫ?</span></span>
+        </h1>
+
+        <div class="hero__cta" id="test">
+          <p class="hero__cta-text">С помощью профориентационного теста<br>от <span>ТСПК</span></p>
+          <a class="btn btn--lg" href="https://practicum.yandex.ru/promo/test" target="_blank" rel="noopener">Пройти тест</a>
+          <p class="hero__cta-note">это займет всего от 15 минут</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЧТО ТЕБЕ НАВРАЛИ ПРО АЙТИ -->
+    <section class="section myths">
+      <div class="container">
+        <div class="myths__head">
+          <h2 class="myths__title">Что тебе наврали про <span class="accent">АЙТИ</span></h2>
+          <p class="myths__subtitle">Страшилки про математику и «надо родиться программистом». Спойлер: это неправда</p>
+        </div>
+
+        <div class="myths__grid">
+          <!-- Левая тёмная карточка -->
+          <div class="myths__left">
+            <article class="myth-card myth-card--tall myth-card--dark">
+              <div class="myth-card__body">
+                <h3 class="myth-card__title">Айтишники — это<br>только программисты</h3>
+                <p class="myth-card__text"><b>IT</b> — это не только программисты. Есть дизайнеры, аналитики, тестировщики, менеджеры и куча других специалистов.</p>
+              </div>
+              <img class="myth-card__img myth-img--designer" src="assets/img/myth-designer-new.png" alt="">
+              <img class="myth-card__img myth-img--manager" src="assets/img/myth-manager-new.png" alt="">
+            </article>
+          </div>
+
+          <!-- Правый блок -->
+          <div class="myths__right">
+            <article class="myth-card myth-card--wide myth-card--gray">
+              <div class="myth-card__body">
+                <h3 class="myth-card__title">Разбираются в технике</h3>
+                <p class="myth-card__text">быть айтишником — не значит разбираться в технике. И тем более уметь её чинить.</p>
+              </div>
+              <img class="myth-card__img myth-img--gear" src="assets/img/myth-gear.png" alt="">
+            </article>
+
+            <div class="myths__bottom">
+              <article class="myth-card myth-card--sq myth-card--blue">
+                <div class="myth-card__body">
+                  <h3 class="myth-card__title">Работают 24/7</h3>
+                  <p class="myth-card__text">Работать 24/7 — не норма. Постоянные переработки = выгорание и минус продуктивность.</p>
+                </div>
+                <img class="myth-card__img myth-img--clock" src="assets/img/myth-clock.png" alt="">
+              </article>
+
+              <article class="myth-card myth-card--sq myth-card--violet">
+                <div class="myth-card__body">
+                  <h3 class="myth-card__title myth-card__title--wordplay">
+                    Только парни
+                    <img class="myth-title-b" src="assets/icons/b-letter.svg" alt="" aria-hidden="true">
+                    <span class="myth-title-slash" aria-hidden="true"></span>
+                  </h3>
+                  <p class="myth-card__text">В IT могут все: и парни, и девушки. В крупнейших технологических компаниях работает до 45% женщин</p>
+                </div>
+                <img class="myth-card__img myth-img--barbie-pink" src="assets/img/barney-pink.png" alt="">
+                <img class="myth-card__img myth-img--barbie-blue" src="assets/img/barney-blue.png" alt="">
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРОФЕССИИ ПО ТВОИМ СИЛАМ -->
+    <section class="section think">
+      <div class="container">
+        <div class="think__head">
+          <h2 class="think__title">Профессии по твоим силам</h2>
+          <p class="think__subtitle">нажми на свой тип мышления —<br>мы подскажем профессии</p>
+        </div>
+        <div class="think__grid">
+          <a class="think-card think-card--cyan" href="professions.html">
+            <h3 class="think-card__title">Кодить<br>и логика</h3>
+            <img class="think-card__img" src="assets/img/think-logic.png" alt="">
+          </a>
+          <a class="think-card think-card--violet" href="professions.html">
+            <h3 class="think-card__title">Визуал,<br>люблю красоту</h3>
+            <img class="think-card__img" src="assets/img/think-visual.png" alt="">
+          </a>
+          <a class="think-card think-card--green" href="professions.html">
+            <h3 class="think-card__title">Люблю гайды<br>и порядок</h3>
+            <img class="think-card__img" src="assets/img/think-order.png" alt="">
+          </a>
+          <a class="think-card think-card--orange" href="professions.html">
+            <h3 class="think-card__title">Хочу управлять<br>и продвигать</h3>
+            <img class="think-card__img" src="assets/img/think-manage.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- БАННЕР 94% -->
+    <section class="section banner">
+      <div class="container">
+        <div class="banner__inner">
+          <div class="banner__text">
+            <p class="banner__title">94% студентов считают,<br>ТСПК — помог достичь цели!</p>
+            <p class="banner__subtitle">ТСПК вошёл в топ-5<br>образовательных организаций</p>
+          </div>
+          <img class="banner__photo" src="assets/img/maxim.png" alt="Студент ТСПК">
+        </div>
+      </div>
+    </section>
+
+    <!-- ТСПК ПОМОЖЕТ, ЕСЛИ ВЫ -->
+    <section class="section help">
+      <div class="container">
+        <div class="help__head">
+          <h2 class="help__title">ТСПК поможет, если Вы</h2>
+          <p class="help__subtitle">Например... обещали себе начать с понедельника 3 года назад</p>
+        </div>
+        <div class="help__grid">
+          <article class="help-card">
+            <img class="help-card__img" src="assets/img/help-1.png" alt="">
+            <div class="help-card__text">
+              <h3 class="help-card__title">Считаете, что уже поздно начинать с нуля</h3>
+              <p class="help-card__quote">«После 30 лет сменить профессию нереально. Нужно смириться с тем, что есть»</p>
+            </div>
+          </article>
+          <article class="help-card">
+            <img class="help-card__img" src="assets/img/help-2.png" alt="">
+            <div class="help-card__text">
+              <h3 class="help-card__title">Не знаете, что выбрать</h3>
+              <p class="help-card__quote">«Мечусь между разными вариантами и не могу решить, чего именно хочу»</p>
+            </div>
+          </article>
+          <article class="help-card">
+            <img class="help-card__img" src="assets/img/help-3.png" alt="">
+            <div class="help-card__text">
+              <h3 class="help-card__title">Боитесь, что не получится</h3>
+              <p class="help-card__quote">«Учиться будет сложно. Без опыта не получится найти нормальную работу. Зря потрачу время и деньги»</p>
+            </div>
+          </article>
+          <article class="help-card">
+            <img class="help-card__img" src="assets/img/help-4.png" alt="">
+            <div class="help-card__text">
+              <h3 class="help-card__title">Сомневаетесь в новой профессии</h3>
+              <p class="help-card__quote">«А вдруг я начну, а потом пойму, что это не моё? Как определиться сразу?»</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРОФЕССИИ (аккордеон) -->
+    <section class="section acc-section">
+      <div class="container">
+        <div class="acc-section__head">
+          <h2 class="acc-section__title">Профессии</h2>
+          <p class="acc-section__subtitle">Да, с нами ты станешь кем захочешь</p>
+        </div>
+
+        <div class="acc" data-accordion>
+          <!-- UX/UI Дизайнер (открыт) -->
+          <div class="acc__item is-open">
+            <button class="acc__head" type="button">
+              <img class="acc__star" src="assets/img/star-black.png" alt="" aria-hidden="true">
+              <span class="acc__title">UX/UI Дизайнер</span>
+              <span class="acc__toggle" aria-hidden="true">
+                <svg class="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                <svg class="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </span>
+            </button>
+            <div class="acc__body"><div class="acc__body-inner"><div class="acc__content">
+              <p class="acc__lead">Что ты освоишь:</p>
+              <ul class="acc__list">
+                <li>Основы дизайна (композиция, типографика, цветовая теория)</li>
+                <li>Figma (авто-лейауты, компоненты, переменные, стили)</li>
+                <li>Прототипирование (кликабельный макет, юзер-флоу, Figma Mirror)</li>
+                <li>Адаптивный дизайн (сетки, брейкпоинты, авто-лейаут)</li>
+                <li>Работа с разработкой (DevMode, передача макета, Zeplin)</li>
+                <li>UX-исследования (персонажи, CJM, тестирование прототипов)</li>
+                <li>Портфолио (3 кейса: мобильное приложение + десктоп + лендинг)</li>
+              </ul>
+            </div></div></div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="acc__item">
+            <button class="acc__head" type="button">
+              <img class="acc__star" src="assets/img/star-black.png" alt="" aria-hidden="true">
+              <span class="acc__title">Frontend-разработчик</span>
+              <span class="acc__toggle" aria-hidden="true">
+                <svg class="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                <svg class="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </span>
+            </button>
+            <div class="acc__body"><div class="acc__body-inner"><div class="acc__content">
+              <p class="acc__lead">Что ты освоишь:</p>
+              <ul class="acc__list">
+                <li>HTML и CSS — семантика, флексы, гриды, адаптивная вёрстка</li>
+                <li>JavaScript — основы языка, DOM, события, работа с API</li>
+                <li>Современный фреймворк (React / Vue) и компонентный подход</li>
+                <li>Git и командная работа над проектом</li>
+                <li>Портфолио из реальных интерфейсов</li>
+              </ul>
+            </div></div></div>
+          </div>
+
+          <!-- Backend -->
+          <div class="acc__item">
+            <button class="acc__head" type="button">
+              <img class="acc__star" src="assets/img/star-black.png" alt="" aria-hidden="true">
+              <span class="acc__title">Backend-разработчик</span>
+              <span class="acc__toggle" aria-hidden="true">
+                <svg class="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                <svg class="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </span>
+            </button>
+            <div class="acc__body"><div class="acc__body-inner"><div class="acc__content">
+              <p class="acc__lead">Что ты освоишь:</p>
+              <ul class="acc__list">
+                <li>Язык программирования (Python / Node.js / PHP)</li>
+                <li>Базы данных и SQL, проектирование схем</li>
+                <li>REST API и серверная логика</li>
+                <li>Аутентификация и безопасность приложений</li>
+                <li>Git, деплой и работа в команде</li>
+              </ul>
+            </div></div></div>
+          </div>
+
+          <!-- Project Manager -->
+          <div class="acc__item">
+            <button class="acc__head" type="button">
+              <img class="acc__star" src="assets/img/star-black.png" alt="" aria-hidden="true">
+              <span class="acc__title">Project Manager</span>
+              <span class="acc__toggle" aria-hidden="true">
+                <svg class="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                <svg class="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </span>
+            </button>
+            <div class="acc__body"><div class="acc__body-inner"><div class="acc__content">
+              <p class="acc__lead">Что ты освоишь:</p>
+              <ul class="acc__list">
+                <li>Управление проектами и постановка задач</li>
+                <li>Методологии Agile / Scrum / Kanban</li>
+                <li>Коммуникация с командой и заказчиком</li>
+                <li>Аналитика, метрики и планирование</li>
+                <li>Документация и управление рисками</li>
+              </ul>
+            </div></div></div>
+          </div>
+
+          <!-- Спец по комп. сетям -->
+          <div class="acc__item">
+            <button class="acc__head" type="button">
+              <img class="acc__star" src="assets/img/star-black.png" alt="" aria-hidden="true">
+              <span class="acc__title">Специалист по комп. сетям</span>
+              <span class="acc__toggle" aria-hidden="true">
+                <svg class="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                <svg class="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </span>
+            </button>
+            <div class="acc__body"><div class="acc__body-inner"><div class="acc__content">
+              <p class="acc__lead">Что ты освоишь:</p>
+              <ul class="acc__list">
+                <li>Основы сетей: модель OSI, TCP/IP, маршрутизация</li>
+                <li>Настройка сетевого оборудования (коммутаторы, роутеры)</li>
+                <li>Администрирование серверов и служб</li>
+                <li>Сетевая безопасность и мониторинг</li>
+                <li>Диагностика и устранение неполадок</li>
+              </ul>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">ТСПК Профориентация</div>
+      <div class="footer-copy">© 2026 ТСПК</div>
+      <div class="footer-social">
+        <a href="https://t.me/tspktlt">TELEGRAM</a>
+        <a href="https://vk.com/tspk63">VK</a>
+        <a href="https://max.ru/id6322021849_gos">MAX</a>
+        <a href="https://tspk.org/">TSPK.ORG</a>
+      </div>
+      <p class="footer-legal">© 2026 ТСПК | Тольяттинский социально-педагогический колледж. Все права защищены. Лицензия на осуществление образовательной деятельности № 6767-47.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

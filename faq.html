@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чему ты научишься — ТСПК Профориентация</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">ТСПК <span>Профориентация</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="professions.html">Профессии</a>
+        <a href="https://practicum.yandex.ru/promo/test" target="_blank" rel="noopener">Быстрый тест</a>
+        <a href="blog.html">Блог</a>
+        <a href="internships.html">Стажировки</a>
+      </nav>
+      <a class="btn header-cta" href="https://practicum.yandex.ru/promo/test" target="_blank" rel="noopener">Пройти тест</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- НАВЫКИ ПРОФЕССИЙ (аккордеон) -->
+    <section class="section acc-section">
+      <div class="container">
+        <div class="acc-section__head">
+          <h2 class="acc-section__title">Чему ты научишься</h2>
+          <p class="acc-section__subtitle">Полный список навыков по каждой профессии</p>
+        </div>
+
+        <div class="acc" data-accordion>
+          <!-- Frontend-разработчик -->
+          <div class="acc__item is-open">
+            <button class="acc__head" type="button">
+              <img class="acc__star" src="assets/img/star-black.png" alt="" aria-hidden="true">
+              <span class="acc__title">Frontend-разработчик</span>
+              <span class="acc__toggle" aria-hidden="true">
+                <svg class="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                <svg class="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </span>
+            </button>
+            <div class="acc__body"><div class="acc__body-inner"><div class="acc__content">
+              <ol class="acc__list">
+                <li>HTML + CSS (Flex, Grid, адаптив, Figma)</li>
+                <li>Git (GitHub, ветки, pull request)</li>
+                <li>JavaScript (DOM, fetch, async/await, localStorage, VS Code)</li>
+                <li>React (компоненты, хуки: useState, useEffect, React Router)</li>
+                <li>Работа с API (axios, постман для теста)</li>
+                <li>Деплой (Vercel / Netlify)</li>
+                <li>Pet-проект (интернет-магазин или дашборд)</li>
+              </ol>
+            </div></div></div>
+          </div>
+
+          <!-- Backend-разработчик -->
+          <div class="acc__item is-open">
+            <button class="acc__head" type="button">
+              <img class="acc__star" src="assets/img/star-black.png" alt="" aria-hidden="true">
+              <span class="acc__title">Backend-разработчик</span>
+              <span class="acc__toggle" aria-hidden="true">
+                <svg class="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                <svg class="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </span>
+            </button>
+            <div class="acc__body"><div class="acc__body-inner"><div class="acc__content">
+              <ol class="acc__list">
+                <li>Основы Python (PyCharm / VS Code)</li>
+                <li>Git (GitHub, Git Bash)</li>
+                <li>ООП (классы, наследование, полиморфизм)</li>
+                <li>SQL + PostgreSQL (pgAdmin / DBeaver)</li>
+                <li>Django (модели, миграции, админка, views, CBV) или FastAPI (маршруты, Pydantic)</li>
+                <li>REST API (Postman / Insomnia, JSON, JWT)</li>
+                <li>Pet-проект (бота на aiogram или API-сервис)</li>
+              </ol>
+            </div></div></div>
+          </div>
+
+          <!-- Project Manager (IT) -->
+          <div class="acc__item is-open">
+            <button class="acc__head" type="button">
+              <img class="acc__star" src="assets/img/star-black.png" alt="" aria-hidden="true">
+              <span class="acc__title">Project Manager (IT)</span>
+              <span class="acc__toggle" aria-hidden="true">
+                <svg class="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                <svg class="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </span>
+            </button>
+            <div class="acc__body"><div class="acc__body-inner"><div class="acc__content">
+              <ol class="acc__list">
+                <li>Методологии (Waterfall, Agile, Scrum, Kanban, Scrumban)</li>
+                <li>Инструменты управления задачами (Jira, Trello, Yandex Tracker, Asana)</li>
+                <li>Документация (ТЗ, брифы, User Story, Roadmap, Confluence / Notion)</li>
+                <li>Управление командой (планирование спринтов, дейлики, ретроспективы)</li>
+                <li>Коммуникация (Telegram / Discord, Google Meet / Zoom, митинги с клиентом)</li>
+                <li>Метрики и отчёты (диаграммы Ганта, Burndown Chart, скорость команды)</li>
+                <li>Работа с рисками и сроками (дедлайны, приоритизация, MVP)</li>
+              </ol>
+            </div></div></div>
+          </div>
+
+          <!-- Специалист по комп.сетям -->
+          <div class="acc__item is-open">
+            <button class="acc__head" type="button">
+              <img class="acc__star" src="assets/img/star-black.png" alt="" aria-hidden="true">
+              <span class="acc__title">Специалист по комп.сетям</span>
+              <span class="acc__toggle" aria-hidden="true">
+                <svg class="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                <svg class="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </span>
+            </button>
+            <div class="acc__body"><div class="acc__body-inner"><div class="acc__content">
+              <ol class="acc__list">
+                <li>Устройство ПК и сети (IP, DNS, DHCP, VLAN, ping, traceroute)</li>
+                <li>Windows (установка, командная строка, PowerShell, Active Directory)</li>
+                <li>Linux (Ubuntu / Debian, bash-команды, права доступа, SSH)</li>
+                <li>Виртуализация (VirtualBox / VMware, создание и настройка ВМ)</li>
+                <li>Сетевые сервисы (настройка DHCP/DNS, OpenVPN / WireGuard)</li>
+                <li>Мониторинг (Zabbix / Prometheus + Grafana – базово)</li>
+                <li>Резервное копирование (rsync, tar, cron, бэкапы по расписанию)</li>
+              </ol>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">ТСПК Профориентация</div>
+      <div class="footer-copy">© 2026 ТСПК</div>
+      <div class="footer-social">
+        <a href="https://t.me/tspktlt">TELEGRAM</a><a href="https://vk.com/tspk63">VK</a><a href="https://max.ru/id6322021849_gos">MAX</a><a href="https://tspk.org/">TSPK.ORG</a>
+      </div>
+      <p class="footer-legal">© 2026 ТСПК | Тольяттинский социально-педагогический колледж. Все права защищены. Лицензия на осуществление образовательной деятельности № 6767-47.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

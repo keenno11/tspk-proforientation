@@ -1,0 +1,229 @@
+/* ============================================================
+   ОБЩИЕ СТИЛИ ВНУТРЕННИХ СТРАНИЦ
+   Подключается ПОСЛЕ style.css. Использует его токены (:root).
+   ============================================================ */
+
+.page { padding-block: clamp(40px, 6vw, 96px); }
+.page-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(30px, 3.6vw, 50px);
+  color: var(--ink);
+  margin-bottom: clamp(36px, 4.5vw, 64px);
+}
+
+/* ---------- Сетка карточек (Профессии, Стажировки) ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 2vw, 30px);
+  max-width: 1286px;
+  margin-inline: auto;
+  align-items: stretch;
+}
+.info-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(186, 188, 207, 0.22);
+  transition: transform .2s ease, box-shadow .2s ease;
+  min-height: 100%;
+}
+a.info-card { color: inherit; }
+.info-card:hover { transform: translateY(-6px); box-shadow: 0 16px 34px rgba(186, 188, 207, 0.42); }
+.info-card__media {
+  aspect-ratio: 386 / 177;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: clamp(24px, 3.2vw, 44px);
+}
+.info-card__media img {
+  width: 100%;
+  height: 100%;
+  max-width: min(68%, 160px);
+  max-height: 122px;
+  object-fit: contain;
+}
+.info-card--logo .info-card__media img {
+  width: 100%;
+  height: 100%;
+  max-width: min(56%, 150px);
+  max-height: 118px;
+  object-fit: contain;
+}
+.card-grid--professions .info-card__media {
+  padding: clamp(18px, 2.4vw, 34px);
+}
+.card-grid--professions .info-card__media img {
+  max-width: min(82%, 210px);
+  max-height: 154px;
+}
+.info-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1vw, 14px);
+  padding: clamp(18px, 1.7vw, 26px) clamp(18px, 1.8vw, 28px) clamp(20px, 1.8vw, 28px);
+}
+.info-card__title { font-weight: 600; font-size: clamp(17px, 1.5vw, 22px); color: var(--ink); }
+.info-card__desc { font-size: clamp(13px, 1.1vw, 15px); color: #7b7b7b; line-height: 1.45; flex: 1; max-width: 34ch; }
+.info-card__divider { border: none; border-top: 1px solid #ededed; margin: 0; }
+.info-card__footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.info-card__price { font-weight: 700; font-size: clamp(15px, 1.3vw, 18px); color: var(--blue); }
+.info-card__btn {
+  background: var(--blue);
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 9px 18px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-btn-sm);
+  transition: background .15s ease;
+}
+.info-card__btn:hover { background: #2f50d8; }
+
+/* ---------- Страница профессии ---------- */
+.prof { padding-block: clamp(30px, 4vw, 60px); }
+.prof-hero {
+  display: flex;
+  gap: clamp(24px, 4vw, 96px);
+  align-items: stretch;
+  margin-bottom: clamp(44px, 6vw, 90px);
+}
+.prof-hero__media {
+  flex: 0 0 42%;
+  background: #f5f6fc;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+  padding: 5%;
+}
+.prof-hero__media img { width: 82%; max-width: 460px; height: auto; }
+.prof-hero__body { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; }
+.prof-badge {
+  align-self: flex-start;
+  background: #e9eafe;
+  color: var(--blue-accent);
+  font-weight: 500;
+  font-size: clamp(13px, 1.1vw, 16px);
+  padding: 8px 18px;
+  border-radius: 14px;
+  margin-bottom: clamp(16px, 2vw, 28px);
+}
+.prof-hero__title { font-weight: 700; font-size: clamp(32px, 4.4vw, 64px); line-height: 1.04; color: var(--ink); }
+.prof-hero__subtitle { margin-top: 12px; font-weight: 600; font-size: clamp(17px, 2vw, 30px); color: var(--ink); }
+.prof-hero__desc { margin-top: clamp(14px, 2vw, 26px); font-size: clamp(15px, 1.5vw, 22px); color: #5a5a5a; line-height: 1.5; max-width: 640px; }
+.prof-salary {
+  margin-top: clamp(20px, 3vw, 40px);
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(20px, 3vw, 56px);
+  flex-wrap: wrap;
+}
+.prof-salary__label { font-size: clamp(13px, 1.3vw, 18px); color: #5a5a5a; }
+.prof-salary__value { font-weight: 700; font-size: clamp(24px, 3vw, 44px); color: var(--blue); line-height: 1.1; }
+
+/* ---------- Hard / Soft Skills ---------- */
+.skills-head { text-align: center; font-weight: 700; font-size: clamp(24px, 3vw, 40px); margin-bottom: clamp(28px, 3.5vw, 48px); color: var(--ink); }
+.skills { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(18px, 2.4vw, 48px); margin-bottom: clamp(48px, 7vw, 110px); }
+.skill-card { background: #f8f8f8; border: 1px solid #ededed; border-radius: 24px; padding: clamp(22px, 3vw, 48px); }
+.skill-card__head { display: flex; align-items: center; gap: 16px; margin-bottom: clamp(18px, 2.2vw, 32px); }
+.skill-card__icon {
+  width: clamp(40px, 4vw, 52px); height: clamp(40px, 4vw, 52px);
+  border-radius: 12px; background: var(--blue); color: #fff;
+  display: flex; align-items: center; justify-content: center; flex: 0 0 auto;
+}
+.skill-card__icon svg { width: 54%; height: 54%; }
+.skill-card__title { font-weight: 600; font-size: clamp(18px, 2vw, 28px); color: var(--ink); }
+.skill-list { display: flex; flex-direction: column; gap: clamp(10px, 1.3vw, 16px); }
+.skill-list li {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: clamp(13px, 1.3vw, 18px); color: #3a3a3a; line-height: 1.4;
+}
+.skill-list li::before {
+  content: ""; flex: 0 0 auto; width: 22px; height: 22px; margin-top: 1px; border-radius: 50%;
+  background: var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5 11-11'/%3E%3C/svg%3E") center / 13px no-repeat;
+}
+
+/* ---------- Рабочие инструменты ---------- */
+.tools-head { text-align: center; font-weight: 700; font-size: clamp(24px, 3vw, 40px); color: var(--ink); }
+.tools-sub { text-align: center; color: #7b7b7b; font-size: clamp(14px, 1.5vw, 20px); margin-top: 12px; margin-bottom: clamp(26px, 3.5vw, 52px); }
+.tools { display: flex; flex-wrap: wrap; gap: clamp(18px, 2vw, 34px); justify-content: center; }
+.tool-card {
+  width: clamp(148px, 14vw, 220px);
+  aspect-ratio: 1 / 0.92;
+  background: #fff; border: 1px solid #ededed; border-radius: 22px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(16px, 1.6vw, 24px);
+  box-shadow: 0 4px 16px rgba(186, 188, 207, 0.18);
+  transition: transform .18s ease;
+}
+.tool-card:hover { transform: translateY(-4px); }
+.tool-card__logo { width: clamp(64px, 6vw, 88px); height: clamp(64px, 6vw, 88px); display: flex; align-items: center; justify-content: center; }
+.tool-card__logo svg, .tool-card__logo img { width: 100%; height: 100%; object-fit: contain; }
+.tool-mono {
+  width: 100%; height: 100%; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 700; font-size: clamp(22px, 2.2vw, 34px);
+}
+.tool-card__name { font-size: clamp(15px, 1.35vw, 20px); color: var(--ink); text-align: center; }
+
+/* ---------- FAQ (аккордеон с нумерованными списками) ---------- */
+ol.acc__list { list-style: none; counter-reset: step; gap: clamp(10px, 1.2vw, 16px); }
+ol.acc__list li { counter-increment: step; padding-left: 38px; }
+ol.acc__list li::before {
+  content: counter(step); background: var(--blue);
+  width: 26px; height: 26px; margin: 0; border-radius: 50%;
+  color: #fff; font-size: 14px; font-weight: 600;
+  display: flex; align-items: center; justify-content: center; top: 0;
+}
+
+/* ---------- Страница статьи ---------- */
+.article { max-width: 860px; margin-inline: auto; padding-block: clamp(28px, 4vw, 56px); }
+.article__tag {
+  display: inline-block; background: #d4f3fb; color: #1499bd;
+  font-weight: 500; font-size: 14px; padding: 8px 18px; border-radius: 14px;
+  margin-bottom: clamp(18px, 2.5vw, 32px);
+}
+.article__title { font-weight: 700; font-size: clamp(30px, 4vw, 56px); line-height: 1.1; color: var(--ink); }
+.article__date { margin-top: 16px; color: #9a9a9a; font-style: italic; font-size: clamp(14px, 1.4vw, 20px); }
+.article__body { margin-top: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: clamp(16px, 2vw, 26px); }
+.article__body p { font-size: clamp(15px, 1.5vw, 22px); color: #3a3a3a; line-height: 1.6; }
+
+/* ---------- Адаптив внутренних страниц ---------- */
+@media (max-width: 1000px) {
+  .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .info-card__media img,
+  .info-card--logo .info-card__media img { max-width: min(52%, 150px); }
+  .card-grid--professions .info-card__media img {
+    max-width: min(76%, 190px);
+    max-height: 144px;
+  }
+  .prof-hero { flex-direction: column; }
+  .prof-hero__media { flex: none; width: 100%; min-height: 260px; }
+}
+@media (max-width: 760px) {
+  .skills { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .card-grid { grid-template-columns: 1fr; max-width: 420px; gap: 18px; }
+  .info-card { border-radius: 20px; }
+  .info-card__media { padding: 28px; }
+  .info-card__media img,
+  .info-card--logo .info-card__media img { max-width: min(58%, 145px); max-height: 112px; }
+  .card-grid--professions .info-card__media {
+    padding: 22px;
+  }
+  .card-grid--professions .info-card__media img {
+    max-width: min(76%, 178px);
+    max-height: 138px;
+  }
+  .info-card__footer { gap: 14px; }
+  .info-card__btn { padding-inline: 16px; white-space: nowrap; }
+}

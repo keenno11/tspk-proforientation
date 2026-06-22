@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог — ТСПК Профориентация</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">ТСПК <span>Профориентация</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="professions.html">Профессии</a>
+        <a href="https://practicum.yandex.ru/promo/test" target="_blank" rel="noopener">Быстрый тест</a>
+        <a href="blog.html">Блог</a>
+        <a href="internships.html">Стажировки</a>
+      </nav>
+      <a class="btn header-cta" href="https://practicum.yandex.ru/promo/test" target="_blank" rel="noopener">Пройти тест</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page">
+      <div class="container">
+
+        <!-- Геро -->
+        <div class="blog-hero">
+          <div class="blog-hero__body">
+            <h1 class="blog-hero__title">Новости, гайды<br>и истории из IT</h1>
+            <p class="blog-hero__subtitle">Полезные статьи, советы и разборы инструментов для старта в IT</p>
+            <div class="blog-hero__search">
+              <svg class="blog-hero__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+              <input type="search" placeholder="Поиск по статьям" aria-label="Поиск по статьям">
+            </div>
+          </div>
+          <div class="blog-hero__media">
+            <img src="assets/img/blog-hero.png" alt="">
+          </div>
+        </div>
+
+        <!-- Промо-карточки -->
+        <div class="blog-promo">
+          <article class="promo-card promo-card--blue">
+            <div class="promo-card__body">
+              <h2 class="promo-card__title">Как выбрать профессию в IT в 2026 году</h2>
+              <p class="promo-card__desc">Разбираем направления, перспективы и зарплаты. Помогаем понять, что подойдёт именно тебе.</p>
+              <p class="promo-card__meta">5 мин чтения · 11 мая 2026</p>
+              <div class="promo-card__btn"><a href="article.html">Читать статью</a></div>
+            </div>
+            <img class="promo-card__img" src="assets/img/blog-signpost.png" alt="">
+          </article>
+
+          <article class="promo-card promo-card--violet">
+            <div class="promo-card__body">
+              <h2 class="promo-card__title">ТСПК в национальном мессенджере MAX</h2>
+              <p class="promo-card__desc">Все самое важное в наших соц.сетях!</p>
+              <div class="promo-card__btn"><a href="https://max.ru/id6322021849_gos">Подробнее</a></div>
+            </div>
+            <img class="promo-card__img" src="assets/img/blog-phone.png" alt="">
+          </article>
+        </div>
+
+        <!-- Фильтры -->
+        <div class="blog-filters">
+          <a class="blog-filter blog-filter--active" href="#">Все статьи</a>
+          <a class="blog-filter" href="#">Новости</a>
+          <a class="blog-filter" href="#">Программирование</a>
+          <a class="blog-filter" href="#">Дизайн</a>
+          <a class="blog-filter" href="#">Карьера</a>
+          <a class="blog-filter" href="#">Гайды</a>
+        </div>
+
+        <!-- Сетка статей -->
+        <div class="blog-grid">
+
+          <a class="info-card blog-card--design" href="article.html">
+            <div class="info-card__media"><img src="assets/img/prof-designer.png" alt=""></div>
+            <div class="info-card__body">
+              <span class="blog-card__tag">Дизайн</span>
+              <h3 class="info-card__title">7 принципов крутого интерфейса</h3>
+              <p class="blog-card__meta">4 мин чтения · 11 мая 2026</p>
+              <span class="blog-card__more">Подробнее</span>
+            </div>
+          </a>
+
+          <a class="info-card blog-card--code" href="article.html">
+            <div class="info-card__media"><img src="assets/img/prof-frontend.png" alt=""></div>
+            <div class="info-card__body">
+              <span class="blog-card__tag">Программирование</span>
+              <h3 class="info-card__title">База верстки</h3>
+              <p class="blog-card__meta">4 мин чтения · 11 мая 2026</p>
+              <span class="blog-card__more">Подробнее</span>
+            </div>
+          </a>
+
+          <a class="info-card blog-card--pm" href="article.html">
+            <div class="info-card__media"><img src="assets/img/prof-pm.png" alt=""></div>
+            <div class="info-card__body">
+              <span class="blog-card__tag">Проект менеджер</span>
+              <h3 class="info-card__title">Как круто представить свой продукт</h3>
+              <p class="blog-card__meta">4 мин чтения · 11 мая 2026</p>
+              <span class="blog-card__more">Подробнее</span>
+            </div>
+          </a>
+
+          <a class="info-card blog-card--career" href="article.html">
+            <div class="info-card__media"><img src="assets/img/prof-network.png" alt=""></div>
+            <div class="info-card__body">
+              <span class="blog-card__tag">Карьера</span>
+              <h3 class="info-card__title">Где найти стажировку новичку в 2026?</h3>
+              <p class="blog-card__meta">4 мин чтения · 11 мая 2026</p>
+              <span class="blog-card__more">Подробнее</span>
+            </div>
+          </a>
+
+          <a class="info-card blog-card--code" href="article.html">
+            <div class="info-card__media"><img src="assets/img/prof-frontend.png" alt=""></div>
+            <div class="info-card__body">
+              <span class="blog-card__tag">Программирование</span>
+              <h3 class="info-card__title">Как работает база данных простыми словами</h3>
+              <p class="blog-card__meta">4 мин чтения · 11 мая 2026</p>
+              <span class="blog-card__more">Подробнее</span>
+            </div>
+          </a>
+
+          <a class="info-card blog-card--news" href="article.html">
+            <div class="info-card__media"><img src="assets/img/prof-backend.png" alt=""></div>
+            <div class="info-card__body">
+              <span class="blog-card__tag">Новости</span>
+              <h3 class="info-card__title">CHATGPT отобрал у тебя работу...</h3>
+              <p class="blog-card__meta">4 мин чтения · 11 мая 2026</p>
+              <span class="blog-card__more">Подробнее</span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">ТСПК Профориентация</div>
+      <div class="footer-copy">© 2026 ТСПК</div>
+      <div class="footer-social">
+        <a href="https://t.me/tspktlt">TELEGRAM</a><a href="https://vk.com/tspk63">VK</a><a href="https://max.ru/id6322021849_gos">MAX</a><a href="https://tspk.org/">TSPK.ORG</a>
+      </div>
+      <p class="footer-legal">© 2026 ТСПК | Тольяттинский социально-педагогический колледж. Все права защищены. Лицензия на осуществление образовательной деятельности № 6767-47.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

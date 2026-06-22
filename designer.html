@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UX/UI Дизайнер — ТСПК Профориентация</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">ТСПК <span>Профориентация</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="professions.html">Профессии</a>
+        <a href="https://practicum.yandex.ru/promo/test" target="_blank" rel="noopener">Быстрый тест</a>
+        <a href="blog.html">Блог</a>
+        <a href="internships.html">Стажировки</a>
+      </nav>
+      <a class="btn header-cta" href="https://practicum.yandex.ru/promo/test" target="_blank" rel="noopener">Пройти тест</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="prof">
+      <div class="container">
+        <!-- Герой профессии -->
+        <div class="prof-hero">
+          <div class="prof-hero__media">
+            <img src="assets/img/prof-designer.png" alt="UX/UI Дизайнер">
+          </div>
+          <div class="prof-hero__body">
+            <span class="prof-badge">Визуал, люблю красоту</span>
+            <h1 class="prof-hero__title">UX/UI Дизайнер</h1>
+            <p class="prof-hero__subtitle">Делай интернет удобным и красивым</p>
+            <p class="prof-hero__desc">UX/UI дизайнер создаёт интерфейсы цифровых продуктов. Продумывает логику, структуру и визуал, чтобы пользователю было удобно и приятно пользоваться продуктом.</p>
+            <div class="prof-salary">
+              <div>
+                <div class="prof-salary__label">Средняя зарплата</div>
+                <div class="prof-salary__value">от 67 000 ₽</div>
+              </div>
+              <a class="btn" href="https://practicum.yandex.ru/promo/test" target="_blank" rel="noopener">Хочу стать дизайнером</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hard / Soft Skills -->
+        <h2 class="skills-head">Hard/Soft Skills</h2>
+        <div class="skills">
+          <div class="skill-card">
+            <div class="skill-card__head">
+              <span class="skill-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg>
+              </span>
+              <span class="skill-card__title">Hard Skills</span>
+            </div>
+            <ul class="skill-list">
+              <li>Основы дизайна (композиция, типографика, цветовая теория)</li>
+              <li>Figma (авто-лейауты, компоненты, переменные, стили)</li>
+              <li>Прототипирование (кликабельный макет, юзер-флоу, Figma Mirror)</li>
+              <li>Адаптивный дизайн (сетки, брейкпоинты, авто-лейаут)</li>
+              <li>Работа с разработкой (DevMode, передача макета, Zeplin / Вник)</li>
+              <li>UX-исследования (персонажи, CJM, тестирование прототипов)</li>
+              <li>Портфолио (3 кейса: мобильное приложение + десктоп + лендинг)</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__head">
+              <span class="skill-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+              </span>
+              <span class="skill-card__title">Soft Skills</span>
+            </div>
+            <ul class="skill-list">
+              <li>Креативность и визуальное мышление</li>
+              <li>Умение слушать и понимать задачу</li>
+              <li>Внимание к деталям</li>
+              <li>Умение принимать и давать обратную связь</li>
+              <li>Тайм-менеджмент и организованность</li>
+              <li>Желание постоянно развиваться</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Рабочие инструменты -->
+        <h2 class="tools-head">Рабочие инструменты</h2>
+        <p class="tools-sub">Инструменты могут меняться в зависимости от задачи и компании</p>
+        <div class="tools">
+          <div class="tool-card">
+            <span class="tool-card__logo"><img src="assets/icons/figma.svg" alt=""></span>
+            <span class="tool-card__name">Figma</span>
+          </div>
+          <div class="tool-card">
+            <span class="tool-card__logo"><img src="assets/icons/photoshop.svg" alt=""></span>
+            <span class="tool-card__name">Photoshop</span>
+          </div>
+          <div class="tool-card">
+            <span class="tool-card__logo"><img src="assets/icons/chatgpt.svg" alt=""></span>
+            <span class="tool-card__name">ChatGPT</span>
+          </div>
+          <div class="tool-card">
+            <span class="tool-card__logo"><img src="assets/icons/claude.svg" alt=""></span>
+            <span class="tool-card__name">Claude AI</span>
+          </div>
+          <div class="tool-card">
+            <span class="tool-card__logo"><img src="assets/icons/zeplin.svg" alt=""></span>
+            <span class="tool-card__name">Zeplin</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">ТСПК Профориентация</div>
+      <div class="footer-copy">© 2026 ТСПК</div>
+      <div class="footer-social">
+        <a href="https://t.me/tspktlt">TELEGRAM</a><a href="https://vk.com/tspk63">VK</a><a href="https://max.ru/id6322021849_gos">MAX</a><a href="https://tspk.org/">TSPK.ORG</a>
+      </div>
+      <p class="footer-legal">© 2026 ТСПК | Тольяттинский социально-педагогический колледж. Все права защищены. Лицензия на осуществление образовательной деятельности № 6767-47.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
