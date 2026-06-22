@@ -768,6 +768,17 @@ input, textarea { font: inherit; }
   }
   .myth-card--blue .myth-card__text { max-width: 30ch; }
   .myth-card--violet .myth-card__text { max-width: min(34ch, 78%); }
+  .myth-title-b {
+    width: clamp(22px, 6vw, 30px);
+    left: 58%;
+    top: -82%;
+  }
+  .myth-title-slash {
+    left: 60%;
+    top: 7%;
+    height: clamp(28px, 7vw, 36px);
+    transform: rotate(-18deg);
+  }
   .myth-img--designer { width: 42%; right: -2%; bottom: -0%; }
   .myth-img--manager { width: 24%; left: -0%; bottom: -2%; }
   .myth-img--gear { width: 34%; right: -3%; bottom: -5%; }
@@ -782,6 +793,20 @@ input, textarea { font: inherit; }
   .acc__content { padding-left: clamp(24px, 8vw, 56px); }
 }
 
+@media (min-width: 481px) and (max-width: 760px) {
+  .myth-title-b {
+    width: 18px;
+    left: 58%;
+    top: -100%;
+  }
+  .myth-title-slash {
+    left: 59%;
+    top: 1%;
+    height: 22px;
+    transform: rotate(-14deg);
+  }
+}
+
 @media (max-width: 480px) {
   .think-card { width: min(160px, 48vw); }
   .help-card { grid-template-columns: 82px 1fr; }
@@ -792,4 +817,15 @@ input, textarea { font: inherit; }
   .myth-card--sq .myth-card__text { font-size: 14px; line-height: 1.42; }
   .myth-card--violet .myth-card__text,
   .myth-card--blue .myth-card__text { max-width: 68%; }
+  .myth-title-b {
+    width: 24px;
+    left: 58%;
+    top: -74%;
+  }
+  .myth-title-slash {
+    left: 60%;
+    top: 10%;
+    height: 30px;
+    transform: rotate(-16deg);
+  }
 }
